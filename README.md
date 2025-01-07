@@ -56,3 +56,14 @@ docker run --name some-postgres -p 5432:5432 -e POSTGRES_PASSWORD=password -d po
 ```bash
 poetry run python assessment/seeds.py
 ```
+
+## Додаткові завдання
+1. До файлу my_select.py додану два запити
+2. Для функціоналу CRUD створено файл main.py  
+   Приклади для командного рядка:
+     ```ini 
+              python main.py - create -m Teacher --name 'John Doe'  
+              python main.py - read   -m Teacher  
+              python main.py - update -m Teacher --id 1 --name 'Jane Doe'  
+              python main.py - delete -m Teacher --id 1
+
